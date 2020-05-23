@@ -7,3 +7,4 @@ Usual Truffle commands work:
 truffle compile
 truffle migrate
 truffle test
+```
