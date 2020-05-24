@@ -9,3 +9,6 @@ library Arithmetic {
     {
         uint ahi = a >> 128;
         uint alo = a & 2**128-1;
+        uint bhi = b >> 128;
+        uint blo = b & 2**128-1;
+        ab0 = alo * blo;
