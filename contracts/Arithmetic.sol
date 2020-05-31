@@ -21,3 +21,6 @@ library Arithmetic {
     // I adapted this from Fast Division of Large Integers by Karl Hasselström
     // Algorithm 3.4: Divide-and-conquer division (3 by 2)
     // Karl got it from Burnikel and Ziegler and the GMP lib implementation
+    function div256_128By256(uint a21, uint a0, uint b)
+        constant
+        returns (uint q, uint r)
