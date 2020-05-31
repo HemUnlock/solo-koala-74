@@ -24,3 +24,5 @@ library Arithmetic {
     function div256_128By256(uint a21, uint a0, uint b)
         constant
         returns (uint q, uint r)
+    {
+        uint qhi = (a21 / b) << 128;
