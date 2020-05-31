@@ -26,3 +26,4 @@ library Arithmetic {
         returns (uint q, uint r)
     {
         uint qhi = (a21 / b) << 128;
+        a21 %= b;
