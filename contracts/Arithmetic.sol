@@ -31,3 +31,6 @@ library Arithmetic {
         uint shift = 0;
         while(b >> shift > 0) shift++;
         shift = 256 - shift;
+        a21 = (a21 << shift) + (shift > 128 ? a0 << (shift - 128) : a0 >> (128 - shift));
+        a0 = (a0 << shift) & 2**128-1;
+        b <<= shift;
