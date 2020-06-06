@@ -27,3 +27,7 @@ library Arithmetic {
     {
         uint qhi = (a21 / b) << 128;
         a21 %= b;
+
+        uint shift = 0;
+        while(b >> shift > 0) shift++;
+        shift = 256 - shift;
