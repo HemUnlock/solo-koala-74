@@ -34,3 +34,4 @@ library Arithmetic {
         a21 = (a21 << shift) + (shift > 128 ? a0 << (shift - 128) : a0 >> (128 - shift));
         a0 = (a0 << shift) & 2**128-1;
         b <<= shift;
+        var (b1, b0) = (b >> 128, b & 2**128-1);
