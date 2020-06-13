@@ -40,3 +40,9 @@ library Arithmetic {
         if(a21 >> 128 < b1) {
             q = a21 / b1;
             rhi = a21 % b1;
+        } else {
+            q = 2**128-1;
+            rhi = a21 - (b1 << 128) + b1;
+        }
+
+        uint rsub0 = (q & 2**128-1) * b0;
