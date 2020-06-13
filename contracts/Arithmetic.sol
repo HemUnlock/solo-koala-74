@@ -35,3 +35,8 @@ library Arithmetic {
         a0 = (a0 << shift) & 2**128-1;
         b <<= shift;
         var (b1, b0) = (b >> 128, b & 2**128-1);
+
+        uint rhi;
+        if(a21 >> 128 < b1) {
+            q = a21 / b1;
+            rhi = a21 % b1;
