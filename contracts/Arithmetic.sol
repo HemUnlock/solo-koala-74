@@ -46,3 +46,5 @@ library Arithmetic {
         }
 
         uint rsub0 = (q & 2**128-1) * b0;
+        uint rsub21 = (q >> 128) * b0 + (rsub0 >> 128);
+        rsub0 &= 2**128-1;
