@@ -50,3 +50,7 @@ library Arithmetic {
         rsub0 &= 2**128-1;
 
         while(rsub21 > rhi || rsub21 == rhi && rsub0 > a0) {
+            q--;
+            a0 += b0;
+            rhi += b1 + (a0 >> 128);
+            a0 &= 2**128-1;
