@@ -59,3 +59,7 @@ library Arithmetic {
         q += qhi;
         r = (((rhi - rsub21) << 128) + a0 - rsub0) >> shift;
     }
+
+    function overflowResistantFraction(uint a, uint b, uint divisor)
+        returns (uint)
+    {
