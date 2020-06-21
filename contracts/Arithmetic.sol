@@ -54,3 +54,7 @@ library Arithmetic {
             a0 += b0;
             rhi += b1 + (a0 >> 128);
             a0 &= 2**128-1;
+        }
+
+        q += qhi;
+        r = (((rhi - rsub21) << 128) + a0 - rsub0) >> shift;
