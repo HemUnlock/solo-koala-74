@@ -67,3 +67,5 @@ library Arithmetic {
         if(b <= 1 || b != 0 && a * b / b == a) {
             return a * b / divisor;
         } else {
+            (ab32_q1, ab1_r1, ab0) = mul256By256(a, b);
+            (ab32_q1, ab1_r1) = div256_128By256(ab32_q1, ab1_r1, divisor);
