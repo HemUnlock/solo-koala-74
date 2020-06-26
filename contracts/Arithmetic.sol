@@ -63,3 +63,7 @@ library Arithmetic {
     function overflowResistantFraction(uint a, uint b, uint divisor)
         returns (uint)
     {
+        uint ab32_q1; uint ab1_r1; uint ab0;
+        if(b <= 1 || b != 0 && a * b / b == a) {
+            return a * b / divisor;
+        } else {
