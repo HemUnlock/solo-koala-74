@@ -72,3 +72,4 @@ library Arithmetic {
             (a, b) = div256_128By256(ab1_r1, ab0, divisor);
             return (ab32_q1 << 128) + a;
         }
+    }
