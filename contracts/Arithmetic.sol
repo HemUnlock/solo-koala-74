@@ -69,3 +69,6 @@ library Arithmetic {
         } else {
             (ab32_q1, ab1_r1, ab0) = mul256By256(a, b);
             (ab32_q1, ab1_r1) = div256_128By256(ab32_q1, ab1_r1, divisor);
+            (a, b) = div256_128By256(ab1_r1, ab0, divisor);
+            return (ab32_q1 << 128) + a;
+        }
