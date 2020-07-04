@@ -12,3 +12,6 @@ contract Exchange {
     uint constant priceLockDuration = 15 * 60;
 
     // A mapping from exchange identifiers to their corresponding Exchange struct instances
+    mapping (bytes32 => Exchange) exchanges;
+
+    // Exchange structure
