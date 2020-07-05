@@ -18,3 +18,6 @@ contract Exchange {
     struct Exchange {
         address[2] tokens; // token pair in exchange
         uint[2] supplies;  // amount held by exchange of each token type
+        uint[2] lastPricePoint;
+        uint lastUpdateTimestamp;
+    }
