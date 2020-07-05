@@ -21,3 +21,6 @@ contract Exchange {
         uint[2] lastPricePoint;
         uint lastUpdateTimestamp;
     }
+
+    /// @param exchangeIdentifier The ID of the exchange
+    /// @return tokens The addresses of the tokens handled by the requested exchange
