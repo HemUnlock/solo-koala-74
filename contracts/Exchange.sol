@@ -15,3 +15,6 @@ contract Exchange {
     mapping (bytes32 => Exchange) exchanges;
 
     // Exchange structure
+    struct Exchange {
+        address[2] tokens; // token pair in exchange
+        uint[2] supplies;  // amount held by exchange of each token type
