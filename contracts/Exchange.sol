@@ -26,3 +26,4 @@ contract Exchange {
     /// @return tokens The addresses of the tokens handled by the requested exchange
     /// @return supplies How much of each of the currencies the exchange holds for providing liquidity
     function getExchange(bytes32 exchangeIdentifier)
+        constant
