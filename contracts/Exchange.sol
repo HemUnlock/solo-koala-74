@@ -28,3 +28,6 @@ contract Exchange {
     function getExchange(bytes32 exchangeIdentifier)
         constant
         returns (address[2] tokens, uint[2] supplies)
+    {
+        Exchange ex = exchanges[exchangeIdentifier];
+        tokens = ex.tokens;
