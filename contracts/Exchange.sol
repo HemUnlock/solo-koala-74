@@ -31,3 +31,8 @@ contract Exchange {
     {
         Exchange ex = exchanges[exchangeIdentifier];
         tokens = ex.tokens;
+        supplies = ex.supplies;
+    }
+
+    /// @param exchangeIdentifier The ID of the exchange
+    /// @return A pair that indicates price
