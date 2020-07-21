@@ -36,3 +36,7 @@ contract Exchange {
 
     /// @param exchangeIdentifier The ID of the exchange
     /// @return A pair that indicates price
+    function getPricePoint(bytes32 exchangeIdentifier)
+        constant
+        returns (uint[2])
+    {
