@@ -40,3 +40,6 @@ contract Exchange {
         constant
         returns (uint[2])
     {
+        Exchange ex = exchanges[exchangeIdentifier];
+        uint param = 0;
+        if(now > ex.lastUpdateTimestamp + priceLockDuration)
