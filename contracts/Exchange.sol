@@ -45,3 +45,8 @@ contract Exchange {
         if(now > ex.lastUpdateTimestamp + priceLockDuration)
             param = now - ex.lastUpdateTimestamp - priceLockDuration;
             if(param > priceRampDuration)
+                param = priceRampDuration;
+
+        return [
+            Arithmetic.overflowResistantFraction((ex.supplies[0] - ex.lastPricePoint[0]), param, priceRampDuration) + ex.lastPricePoint[0],
+            Arithmetic.overflowResistantFraction((ex.supplies[1] - ex.lastPricePoint[1]), param, priceRampDuration) + ex.lastPricePoint[1]
