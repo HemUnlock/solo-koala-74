@@ -43,3 +43,5 @@ contract Exchange {
         Exchange ex = exchanges[exchangeIdentifier];
         uint param = 0;
         if(now > ex.lastUpdateTimestamp + priceLockDuration)
+            param = now - ex.lastUpdateTimestamp - priceLockDuration;
+            if(param > priceRampDuration)
