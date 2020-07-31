@@ -51,3 +51,7 @@ contract Exchange {
             Arithmetic.overflowResistantFraction((ex.supplies[0] - ex.lastPricePoint[0]), param, priceRampDuration) + ex.lastPricePoint[0],
             Arithmetic.overflowResistantFraction((ex.supplies[1] - ex.lastPricePoint[1]), param, priceRampDuration) + ex.lastPricePoint[1]
         ];
+    }
+
+    /// @notice Send amount `supplies[i]` of token `tokens[i]` to this contract to create exchange for token pair
+    /// @param tokens The token pair to be handled by the exchange
