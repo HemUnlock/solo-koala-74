@@ -57,3 +57,6 @@ contract Exchange {
     /// @param tokens The token pair to be handled by the exchange
     /// @param supplies Amount of each currency to fund exchange with
     /// @return exchangeIdentifier The identifier for newly created exchange.
+    function addExchange(address[2] tokens, uint[2] supplies)
+        public
+        returns (bytes32 exchangeIdentifier)
