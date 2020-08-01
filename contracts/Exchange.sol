@@ -55,3 +55,5 @@ contract Exchange {
 
     /// @notice Send amount `supplies[i]` of token `tokens[i]` to this contract to create exchange for token pair
     /// @param tokens The token pair to be handled by the exchange
+    /// @param supplies Amount of each currency to fund exchange with
+    /// @return exchangeIdentifier The identifier for newly created exchange.
