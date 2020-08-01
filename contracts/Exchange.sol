@@ -60,3 +60,5 @@ contract Exchange {
     function addExchange(address[2] tokens, uint[2] supplies)
         public
         returns (bytes32 exchangeIdentifier)
+    {
+        exchangeIdentifier = calcExchangeIdentifier(tokens);
