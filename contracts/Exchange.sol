@@ -62,3 +62,6 @@ contract Exchange {
         returns (bytes32 exchangeIdentifier)
     {
         exchangeIdentifier = calcExchangeIdentifier(tokens);
+        if (exchanges[exchangeIdentifier].tokens.length > 0)
+            throw;
+        if (   !Token(tokens[0]).transferFrom(msg.sender, this, supplies[0])
