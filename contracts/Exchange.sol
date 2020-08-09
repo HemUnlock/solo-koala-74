@@ -65,3 +65,6 @@ contract Exchange {
         if (exchanges[exchangeIdentifier].tokens.length > 0)
             throw;
         if (   !Token(tokens[0]).transferFrom(msg.sender, this, supplies[0])
+            || !Token(tokens[1]).transferFrom(msg.sender, this, supplies[1]))
+            throw;
+        exchanges[exchangeIdentifier] = Exchange({
