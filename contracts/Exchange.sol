@@ -72,3 +72,8 @@ contract Exchange {
             supplies: supplies,
             lastPricePoint: supplies,
             lastUpdateTimestamp: now
+        });
+    }
+
+    /// @notice Send `amount` of token `tokens[tokenIndex]` to this contract to fund exchange
+    /// @param exchangeIdentifier The ID of the exchange
