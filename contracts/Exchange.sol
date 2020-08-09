@@ -68,3 +68,7 @@ contract Exchange {
             || !Token(tokens[1]).transferFrom(msg.sender, this, supplies[1]))
             throw;
         exchanges[exchangeIdentifier] = Exchange({
+            tokens: tokens,
+            supplies: supplies,
+            lastPricePoint: supplies,
+            lastUpdateTimestamp: now
