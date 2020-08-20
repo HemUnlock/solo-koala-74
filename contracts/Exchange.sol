@@ -78,3 +78,7 @@ contract Exchange {
     /// @notice Send `amount` of token `tokens[tokenIndex]` to this contract to fund exchange
     /// @param exchangeIdentifier The ID of the exchange
     /// @param tokenIndex `0` or `1` to refer to either first or second entry in the token pair associated with exchange as determined by `getExchange`
+    /// @param amount Amount of currency to send to this contract
+    function addFunding(bytes32 exchangeIdentifier, uint8 tokenIndex, uint amount)
+        public
+    {
