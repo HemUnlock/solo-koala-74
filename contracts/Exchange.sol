@@ -89,3 +89,6 @@ contract Exchange {
         ex.lastUpdateTimestamp = now;
         ex.supplies[tokenIndex] += amount;
     }
+
+    /// @notice Send `calcCosts(exchangeIdentifier, tokenIndex, amount)` of `tokens[1-tokenIndex]` to buy `amount` of `tokens[tokenIndex]` from exchange.
+    /// @param exchangeIdentifier The ID of the exchange
