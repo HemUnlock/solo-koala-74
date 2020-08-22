@@ -85,3 +85,7 @@ contract Exchange {
         Exchange ex = exchanges[exchangeIdentifier];
         if (!Token(ex.tokens[tokenIndex]).transferFrom(msg.sender, this, amount))
             throw;
+        ex.lastPricePoint = getPricePoint(exchangeIdentifier);
+        ex.lastUpdateTimestamp = now;
+        ex.supplies[tokenIndex] += amount;
+    }
