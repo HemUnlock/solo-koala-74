@@ -82,3 +82,6 @@ contract Exchange {
     function addFunding(bytes32 exchangeIdentifier, uint8 tokenIndex, uint amount)
         public
     {
+        Exchange ex = exchanges[exchangeIdentifier];
+        if (!Token(ex.tokens[tokenIndex]).transferFrom(msg.sender, this, amount))
+            throw;
