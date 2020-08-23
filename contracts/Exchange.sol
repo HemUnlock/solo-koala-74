@@ -92,3 +92,6 @@ contract Exchange {
 
     /// @notice Send `calcCosts(exchangeIdentifier, tokenIndex, amount)` of `tokens[1-tokenIndex]` to buy `amount` of `tokens[tokenIndex]` from exchange.
     /// @param exchangeIdentifier The ID of the exchange
+    /// @param tokenIndex Index of the token to be bought from the exchange
+    /// @param amount Amount of `tokens[tokenIndex]` to buy from exchange
+    function buyTokens(bytes32 exchangeIdentifier, uint8 tokenIndex, uint amount)
