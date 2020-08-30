@@ -98,3 +98,5 @@ contract Exchange {
         public
     {
         uint costs = calcCosts(exchangeIdentifier, tokenIndex, amount);
+        Exchange ex = exchanges[exchangeIdentifier];
+        uint8 paymentTokenIndex = 1 - tokenIndex;
