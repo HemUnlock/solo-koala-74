@@ -103,3 +103,4 @@ contract Exchange {
         if (!Token(ex.tokens[paymentTokenIndex]).transferFrom(msg.sender, this, amount))
             throw;
         if (!Token(ex.tokens[tokenIndex]).transfer(msg.sender, amount))
+            throw;
