@@ -104,3 +104,9 @@ contract Exchange {
             throw;
         if (!Token(ex.tokens[tokenIndex]).transfer(msg.sender, amount))
             throw;
+
+        ex.lastPricePoint = getPricePoint(exchangeIdentifier);
+        ex.lastUpdateTimestamp = now;
+        ex.supplies[paymentTokenIndex] += costs;
+        ex.supplies[tokenIndex] -= amount;
+    }
