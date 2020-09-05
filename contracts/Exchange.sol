@@ -110,3 +110,9 @@ contract Exchange {
         ex.supplies[paymentTokenIndex] += costs;
         ex.supplies[tokenIndex] -= amount;
     }
+
+    /// @dev Will price `tokens[tokenIndex]` to keep `supplies[0] * supplies[1]` the same after sending `amount` of `tokens[tokenIndex]` to `msg.sender` and receiving the calculated price of `tokens[1-tokenIndex]` from `msg.sender`
+    /// @param exchangeIdentifier The ID of the exchange
+    /// @param tokenIndex Index of the token to be bought from the exchange
+    /// @param amount Amount of `tokens[tokenIndex]` to buy from exchange
+    /// @return Price of `amount` of `tokens[tokenIndex]` in `tokens[1-tokenIndex]`
