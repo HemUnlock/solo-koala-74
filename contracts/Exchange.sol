@@ -116,3 +116,5 @@ contract Exchange {
     /// @param tokenIndex Index of the token to be bought from the exchange
     /// @param amount Amount of `tokens[tokenIndex]` to buy from exchange
     /// @return Price of `amount` of `tokens[tokenIndex]` in `tokens[1-tokenIndex]`
+    function calcCosts(bytes32 exchangeIdentifier, uint8 tokenIndex, uint amount)
+        public constant
