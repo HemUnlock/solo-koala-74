@@ -118,3 +118,5 @@ contract Exchange {
     /// @return Price of `amount` of `tokens[tokenIndex]` in `tokens[1-tokenIndex]`
     function calcCosts(bytes32 exchangeIdentifier, uint8 tokenIndex, uint amount)
         public constant
+        returns (uint)
+    {
