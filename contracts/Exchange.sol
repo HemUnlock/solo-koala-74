@@ -123,3 +123,7 @@ contract Exchange {
         Exchange ex = exchanges[exchangeIdentifier];
         if (ex.supplies[tokenIndex] <= amount)
             throw;
+        uint invariant = ex.supplies[0] * ex.supplies[1];
+        uint minuend = invariant / (ex.supplies[tokenIndex] - amount);
+        uint8 paymentTokenIndex = 1 - tokenIndex;
+        uint subtrahend = ex.supplies[paymentTokenIndex];
