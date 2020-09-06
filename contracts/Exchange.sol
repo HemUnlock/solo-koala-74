@@ -127,3 +127,5 @@ contract Exchange {
         uint minuend = invariant / (ex.supplies[tokenIndex] - amount);
         uint8 paymentTokenIndex = 1 - tokenIndex;
         uint subtrahend = ex.supplies[paymentTokenIndex];
+        if (subtrahend >= minuend)
+            throw;
