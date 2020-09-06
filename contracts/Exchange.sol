@@ -120,3 +120,6 @@ contract Exchange {
         public constant
         returns (uint)
     {
+        Exchange ex = exchanges[exchangeIdentifier];
+        if (ex.supplies[tokenIndex] <= amount)
+            throw;
