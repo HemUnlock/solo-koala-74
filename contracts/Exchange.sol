@@ -135,3 +135,8 @@ contract Exchange {
     /// @param tokens Token pair to get exchange ID for
     /// @return The exchange ID
     function calcExchangeIdentifier(address[2] tokens)
+        public constant
+        returns (bytes32)
+    {
+        return keccak256(tokens[0]) ^ keccak256(tokens[1]);
+    }
