@@ -129,3 +129,5 @@ contract Exchange {
         uint subtrahend = ex.supplies[paymentTokenIndex];
         if (subtrahend >= minuend)
             throw;
+        return minuend - subtrahend;
+    }
