@@ -131,3 +131,7 @@ contract Exchange {
             throw;
         return minuend - subtrahend;
     }
+
+    /// @param tokens Token pair to get exchange ID for
+    /// @return The exchange ID
+    function calcExchangeIdentifier(address[2] tokens)
