@@ -140,3 +140,4 @@ contract Exchange {
     {
         return keccak256(tokens[0]) ^ keccak256(tokens[1]);
     }
+}
