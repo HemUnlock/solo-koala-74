@@ -44,3 +44,7 @@ var numDays = parseInt(document.getElementById("num-days").value),
     wizConsumed30 = [],
     wizPerDayPerGNO = [],
     totalWiz = [];
+
+function createChart(opts) {
+    var chartCanvas = opts.chartCanvas,
+        chartData = opts.chartData || [],
