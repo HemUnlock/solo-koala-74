@@ -48,3 +48,11 @@ var numDays = parseInt(document.getElementById("num-days").value),
 function createChart(opts) {
     var chartCanvas = opts.chartCanvas,
         chartData = opts.chartData || [],
+        title = opts.title || '',
+        range = opts.range != null ? opts.range : 1,
+        chartDataFunction = opts.chartDataFunction || function(data) {
+            for(var i = 0; i < numDays; i++) {
+                data[i] = { x: i, y: i * range / numDays };
+            }
+        },
+        type = opts.type || 'input';
