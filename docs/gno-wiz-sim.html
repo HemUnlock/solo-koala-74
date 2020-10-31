@@ -86,3 +86,10 @@ function createChart(opts) {
         var buttonConstant = document.createElement('button'),
             buttonLinearIncreasing = document.createElement('button'),
             buttonLinearDecreasing = document.createElement('button');
+
+        buttonConstant.innerText = 'Constant';
+        buttonLinearIncreasing.innerText = 'Linear+';
+        buttonLinearDecreasing.innerText = 'Linear-';
+
+        buttonConstant.addEventListener("click", function() {
+            for(var i = 0; i < numDays; i++) {
