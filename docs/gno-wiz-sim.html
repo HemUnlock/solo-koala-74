@@ -101,3 +101,6 @@ function createChart(opts) {
         buttonLinearIncreasing.addEventListener("click", function() {
             for(var i = 0; i < numDays; i++) {
                 chartData[i] = { x: i, y: i * range / numDays };
+            }
+            chart.update(0);
+        });
