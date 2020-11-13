@@ -109,3 +109,8 @@ function createChart(opts) {
             for(var i = 0; i < numDays; i++) {
                 chartData[i] = { x: i, y: range - i * range / numDays };
             }
+            chart.update(0);
+        });
+
+        chartCanvas.insertAdjacentElement('afterend', buttonConstant);
+        buttonConstant.insertAdjacentElement('afterend', buttonLinearIncreasing);
