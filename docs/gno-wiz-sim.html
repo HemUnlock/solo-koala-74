@@ -114,3 +114,7 @@ function createChart(opts) {
 
         chartCanvas.insertAdjacentElement('afterend', buttonConstant);
         buttonConstant.insertAdjacentElement('afterend', buttonLinearIncreasing);
+        buttonLinearIncreasing.insertAdjacentElement('afterend', buttonLinearDecreasing);
+
+        function getCoordinatesFromMouseEvent(e) {
+            var xScale = chart.scales['x-axis-0'],
