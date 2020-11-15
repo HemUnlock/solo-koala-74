@@ -118,3 +118,6 @@ function createChart(opts) {
 
         function getCoordinatesFromMouseEvent(e) {
             var xScale = chart.scales['x-axis-0'],
+                yScale = chart.scales['y-axis-0'],
+                hParam = (e.layerX - xScale.left - xScale.paddingLeft) / (xScale.width - xScale.paddingLeft - xScale.paddingRight),
+                vParam = (chart.chartArea.bottom - e.layerY) / (chart.chartArea.bottom - chart.chartArea.top),
