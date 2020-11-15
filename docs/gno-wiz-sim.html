@@ -121,3 +121,5 @@ function createChart(opts) {
                 yScale = chart.scales['y-axis-0'],
                 hParam = (e.layerX - xScale.left - xScale.paddingLeft) / (xScale.width - xScale.paddingLeft - xScale.paddingRight),
                 vParam = (chart.chartArea.bottom - e.layerY) / (chart.chartArea.bottom - chart.chartArea.top),
+                xCoord = hParam * (xScale.end - xScale.start) + xScale.start,
+                yCoord = vParam * (yScale.end - yScale.start) + yScale.start;
