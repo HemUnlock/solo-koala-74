@@ -123,3 +123,5 @@ function createChart(opts) {
                 vParam = (chart.chartArea.bottom - e.layerY) / (chart.chartArea.bottom - chart.chartArea.top),
                 xCoord = hParam * (xScale.end - xScale.start) + xScale.start,
                 yCoord = vParam * (yScale.end - yScale.start) + yScale.start;
+            return { x: xCoord, y: yCoord };
+        }
