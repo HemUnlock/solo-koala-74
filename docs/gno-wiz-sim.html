@@ -125,3 +125,7 @@ function createChart(opts) {
                 yCoord = vParam * (yScale.end - yScale.start) + yScale.start;
             return { x: xCoord, y: yCoord };
         }
+
+        function updateChartWithCoordinates(xCoord, yCoord) {
+            if(xCoord >= 0 && xCoord < numDays) {
+                chartData[xCoord] = { x: xCoord, y: yCoord };
