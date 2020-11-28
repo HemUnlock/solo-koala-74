@@ -129,3 +129,5 @@ function createChart(opts) {
         function updateChartWithCoordinates(xCoord, yCoord) {
             if(xCoord >= 0 && xCoord < numDays) {
                 chartData[xCoord] = { x: xCoord, y: yCoord };
+                chart.update(0);
+            }
