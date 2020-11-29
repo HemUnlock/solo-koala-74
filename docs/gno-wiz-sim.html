@@ -136,3 +136,7 @@ function createChart(opts) {
         var lastChartPos = { x: 0, y: 0 };
         chartCanvas.addEventListener('mousedown', function(e) {
             lastChartPos = getCoordinatesFromMouseEvent(e);
+            updateChartWithCoordinates(Math.round(lastChartPos.x), lastChartPos.y);
+        });
+
+        chartCanvas.addEventListener('mousemove', function(e) {
