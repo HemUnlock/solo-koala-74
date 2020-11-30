@@ -140,3 +140,5 @@ function createChart(opts) {
         });
 
         chartCanvas.addEventListener('mousemove', function(e) {
+            if(e.buttons === 1) {
+                var chartPos = getCoordinatesFromMouseEvent(e),
