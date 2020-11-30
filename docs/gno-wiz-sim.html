@@ -142,3 +142,5 @@ function createChart(opts) {
         chartCanvas.addEventListener('mousemove', function(e) {
             if(e.buttons === 1) {
                 var chartPos = getCoordinatesFromMouseEvent(e),
+                    step = lastChartPos.x <= chartPos.x ? 1 : -1;
+                for(var i = Math.round(lastChartPos.x); i !== Math.round(chartPos.x); i += step) {
