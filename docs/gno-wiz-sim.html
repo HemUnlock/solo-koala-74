@@ -144,3 +144,4 @@ function createChart(opts) {
                 var chartPos = getCoordinatesFromMouseEvent(e),
                     step = lastChartPos.x <= chartPos.x ? 1 : -1;
                 for(var i = Math.round(lastChartPos.x); i !== Math.round(chartPos.x); i += step) {
+                    updateChartWithCoordinates(i,
