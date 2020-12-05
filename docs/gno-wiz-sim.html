@@ -145,3 +145,7 @@ function createChart(opts) {
                     step = lastChartPos.x <= chartPos.x ? 1 : -1;
                 for(var i = Math.round(lastChartPos.x); i !== Math.round(chartPos.x); i += step) {
                     updateChartWithCoordinates(i,
+                        (i - lastChartPos.x) * (chartPos.y - lastChartPos.y) /
+                        (chartPos.x - lastChartPos.x) + lastChartPos.y);
+                }
+                lastChartPos = chartPos;
