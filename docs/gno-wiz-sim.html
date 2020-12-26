@@ -198,3 +198,7 @@ function updateNumDays(newNumDays) {
         wizConsumed.length = newNumDays;
         wizConsumed30.length = newNumDays;
         wizPerDayPerGNO.length = newNumDays;
+        totalWiz.length = newNumDays;
+    } else {
+        for (var i = numDays; i < newNumDays; i++) {
+            gnoLocked[i] = {x: i, y: gnoLocked[numDays-1].y};
