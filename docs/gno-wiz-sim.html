@@ -190,3 +190,8 @@ var totalWizChart = createChart({
     chartCanvas: document.getElementById("total-wiz"),
     chartData: totalWiz,
     title: 'Total WIZ'
+});
+
+function updateNumDays(newNumDays) {
+    if(newNumDays < numDays) {
+        gnoLocked.length = newNumDays;
