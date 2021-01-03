@@ -215,3 +215,6 @@ function updateNumDays(newNumDays) {
 setInterval(function() {
     var wizCons = 0;
     for(var i = 0; i < numDays; i++) {
+        wizCons += wizConsumed[i].y;
+        if(i - 30 >= 0) {
+            wizCons -= wizConsumed[i - 30].y;
