@@ -218,3 +218,8 @@ setInterval(function() {
         wizCons += wizConsumed[i].y;
         if(i - 30 >= 0) {
             wizCons -= wizConsumed[i - 30].y;
+        }
+        wizConsumed30[i] = {x: i, y: wizCons};
+    }
+
+    totalWiz[0] = {x: 0, y: 10000};
