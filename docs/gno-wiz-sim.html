@@ -229,3 +229,6 @@ setInterval(function() {
             totalWiz[i] = {
                 x: i,
                 y: totalWiz[i-1].y - wizConsumed[i-1].y +
+                    gnoLocked[i-1].y * wizPerDayPerGNO[i-1].y
+            };
+        }
