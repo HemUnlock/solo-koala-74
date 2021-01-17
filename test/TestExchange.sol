@@ -1,1 +1,1 @@
-pragm
+pragma s
