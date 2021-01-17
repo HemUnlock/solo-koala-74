@@ -1,1 +1,1 @@
-pragma s
+pragma sol
