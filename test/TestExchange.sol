@@ -1,1 +1,1 @@
-pragma sol
+pragma solidi
