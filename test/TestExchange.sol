@@ -1,1 +1,1 @@
-pragma solidi
+pragma solidity 
