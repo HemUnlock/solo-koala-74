@@ -1,1 +1,1 @@
-pragma solidity ^0
+pragma solidity ^0.
