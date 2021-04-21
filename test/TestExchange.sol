@@ -4,4 +4,4 @@ import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
 import "tokens/StandardToken.sol";
 import "../contracts/Exchange.sol";
-import "../contracts/Arithmetic.sol"
+import "../contracts/Arithmetic.sol";
