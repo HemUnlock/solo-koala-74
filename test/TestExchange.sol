@@ -7,4 +7,4 @@ import "../contracts/Exchange.sol";
 import "../contracts/Arithmetic.sol";
 
 contract TestExchange {
-    using Ass
+    using Assert
