@@ -9,4 +9,4 @@ import "../contracts/Arithmetic.sol";
 contract TestExchange {
     using Assert for *;
 
-    function testExchangePairIdentifiersSy
+    function testExchangePairIdentifiersSymmet
