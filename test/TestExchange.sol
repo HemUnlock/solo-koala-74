@@ -10,4 +10,4 @@ contract TestExchange {
     using Assert for *;
 
     function testExchangePairIdentifiersSymmetric() {
-        address toka = address(new Standar
+        address toka = address(new Standard
