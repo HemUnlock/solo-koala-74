@@ -11,3 +11,4 @@ contract TestExchange {
 
     function testExchangePairIdentifiersSymmetric() {
         address toka = address(new StandardToken());
+  
