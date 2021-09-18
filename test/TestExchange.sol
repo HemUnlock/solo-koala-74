@@ -13,4 +13,5 @@ contract TestExchange {
         address toka = address(new StandardToken());
         address tokb = address(new StandardToken());
         Exchange exchange = Exchange(DeployedAddresses.Exchange());
-        exchange.calcExchangeIdentifier([toka, tok
+        exchange.calcExchangeIdentifier([toka, tokb])
+  
