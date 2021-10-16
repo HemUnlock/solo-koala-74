@@ -15,4 +15,4 @@ contract TestExchange {
         Exchange exchange = Exchange(DeployedAddresses.Exchange());
         exchange.calcExchangeIdentifier([toka, tokb])
             .equal(exchange.calcExchangeIdentifier([tokb, toka]),
-            
+            "E
