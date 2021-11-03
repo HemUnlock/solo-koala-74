@@ -15,4 +15,4 @@ contract TestExchange {
         Exchange exchange = Exchange(DeployedAddresses.Exchange());
         exchange.calcExchangeIdentifier([toka, tokb])
             .equal(exchange.calcExchangeIdentifier([tokb, toka]),
-            "Exchange ID not symmetric on tok
+            "Exchange ID not symmetric on tokens
