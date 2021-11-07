@@ -17,3 +17,5 @@ contract TestExchange {
             .equal(exchange.calcExchangeIdentifier([tokb, toka]),
             "Exchange ID not symmetric on tokens");
     }
+
+ 
