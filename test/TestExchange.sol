@@ -18,4 +18,4 @@ contract TestExchange {
             "Exchange ID not symmetric on tokens");
     }
 
-    funct
+    functi
