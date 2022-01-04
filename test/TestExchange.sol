@@ -19,4 +19,4 @@ contract TestExchange {
     }
 
     function testOverflowResistantFraction() {
-        // a *
+        // a * b
