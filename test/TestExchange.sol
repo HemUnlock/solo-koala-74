@@ -20,4 +20,4 @@ contract TestExchange {
 
     function testOverflowResistantFraction() {
         // a * b / d = c
-        uint a 
+        uint a = 1
