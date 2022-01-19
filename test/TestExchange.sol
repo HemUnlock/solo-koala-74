@@ -20,4 +20,4 @@ contract TestExchange {
 
     function testOverflowResistantFraction() {
         // a * b / d = c
-        uint a = 123785185682476174482197423818637189467382194
+        uint a = 12378518568247617448219742381863718946738219467
