@@ -8,3 +8,6 @@ contract('Exchange', function(accounts) {
   //   }).then(function(balance) {
   //     assert.equal(balance.valueOf(), 10000, "10000 wasn't in the first account");
   //   });
+  // });
+  // it("should call a function that depends on a linked library", function() {
+  //   var meta;
