@@ -11,3 +11,5 @@ contract('Exchange', function(accounts) {
   // });
   // it("should call a function that depends on a linked library", function() {
   //   var meta;
+  //   var metaCoinBalance;
+  //   var metaCoinEthBalance;
