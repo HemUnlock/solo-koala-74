@@ -13,3 +13,5 @@ contract('Exchange', function(accounts) {
   //   var meta;
   //   var metaCoinBalance;
   //   var metaCoinEthBalance;
+  //
+  //   return Exchange.deployed().then(function(instance) {
