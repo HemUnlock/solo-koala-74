@@ -15,3 +15,8 @@ contract('Exchange', function(accounts) {
   //   var metaCoinEthBalance;
   //
   //   return Exchange.deployed().then(function(instance) {
+  //     meta = instance;
+  //     return meta.getBalance.call(accounts[0]);
+  //   }).then(function(outCoinBalance) {
+  //     metaCoinBalance = outCoinBalance.toNumber();
+  //     return meta.getBalanceInEth.call(accounts[0]);
