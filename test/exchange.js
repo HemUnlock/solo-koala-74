@@ -36,3 +36,9 @@ contract('Exchange', function(accounts) {
   //   var account_one_starting_balance;
   //   var account_two_starting_balance;
   //   var account_one_ending_balance;
+  //   var account_two_ending_balance;
+  //
+  //   var amount = 10;
+  //
+  //   return Exchange.deployed().then(function(instance) {
+  //     meta = instance;
