@@ -29,3 +29,6 @@ contract('Exchange', function(accounts) {
   // it("should send coin correctly", function() {
   //   var meta;
   //
+  //   // Get initial balances of first and second account.
+  //   var account_one = accounts[0];
+  //   var account_two = accounts[1];
