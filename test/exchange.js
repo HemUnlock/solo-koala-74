@@ -32,3 +32,7 @@ contract('Exchange', function(accounts) {
   //   // Get initial balances of first and second account.
   //   var account_one = accounts[0];
   //   var account_two = accounts[1];
+  //
+  //   var account_one_starting_balance;
+  //   var account_two_starting_balance;
+  //   var account_one_ending_balance;
