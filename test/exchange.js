@@ -26,3 +26,6 @@ contract('Exchange', function(accounts) {
   //     assert.equal(metaCoinEthBalance, 2 * metaCoinBalance, "Library function returned unexpected function, linkage may be broken");
   //   });
   // });
+  // it("should send coin correctly", function() {
+  //   var meta;
+  //
