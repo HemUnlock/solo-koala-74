@@ -42,3 +42,7 @@ contract('Exchange', function(accounts) {
   //
   //   return Exchange.deployed().then(function(instance) {
   //     meta = instance;
+  //     return meta.getBalance.call(account_one);
+  //   }).then(function(balance) {
+  //     account_one_starting_balance = balance.toNumber();
+  //     return meta.getBalance.call(account_two);
