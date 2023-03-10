@@ -48,3 +48,6 @@ contract('Exchange', function(accounts) {
   //     return meta.getBalance.call(account_two);
   //   }).then(function(balance) {
   //     account_two_starting_balance = balance.toNumber();
+  //     return meta.sendCoin(account_two, amount, {from: account_one});
+  //   }).then(function() {
+  //     return meta.getBalance.call(account_one);
