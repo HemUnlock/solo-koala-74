@@ -46,3 +46,5 @@ contract('Exchange', function(accounts) {
   //   }).then(function(balance) {
   //     account_one_starting_balance = balance.toNumber();
   //     return meta.getBalance.call(account_two);
+  //   }).then(function(balance) {
+  //     account_two_starting_balance = balance.toNumber();
